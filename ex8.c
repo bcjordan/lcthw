@@ -3,12 +3,22 @@
 int main(int argc, char *argv[])
 {
   int areas[] = {10, 12, 13, 14, 20};
+  char my_name[] = "Brian";
   char name[] = "Zed";
   char full_name[] = {
     'Z', 'e', 'd',
     ' ', 'A', '.', ' ',
     'S', 'h', 'a', 'w', '\0'
   };
+
+  char my_full_name[] = {
+    'B', 'r', 'i', 'a', 'n',
+    ' ', 'C', '.',
+    'J', 'o', 'r', 'd', 'a', 'n', '\0'
+  };
+
+  printf("The number of chars in my_full_name is %ld\n", sizeof(my_full_name) / sizeof(char));
+  printf("The number of chars in my_name is %ld\n", sizeof(my_name) / sizeof(char));
 
   // WARNING: On some systems you may have to change the
   // %ld in this code to a %u since it will use unsigned ints
@@ -17,7 +27,7 @@ int main(int argc, char *argv[])
   printf("The number of ints in areas: %ld\n", 
           sizeof(areas) / sizeof(int));
   printf("The first area is %d, the 2nd %d.\n",
-          areas[0], areas[1]);
+          areas[10], areas[1]);
   
   printf("The size of a char: %ld\n", sizeof(char));
   printf("The size of name (char[]): %ld\n",
