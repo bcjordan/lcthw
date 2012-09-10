@@ -3,9 +3,9 @@
 int main(int argc, char *argv[])
 {
   int numbers[4] = {0};
-  char name[4] = {'a','a','a','a'};
+  char name[4] = {'a','a','a'};
 
-  /* name[3]='A'; */
+  numbers[0] = 'B';
 
   // first, print them out raw
   printf("numbers = %d %d %d %d\n",
