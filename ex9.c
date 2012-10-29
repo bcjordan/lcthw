@@ -40,6 +40,10 @@ int main(int argc, char *argv[])
           name[0], name[1],
           name[2], name[3]);
 
+  printf("name each :%c %c %c %c\n", 
+      name[0], name[1], name[2], name[3]);
+
+
   // print the name like a string
   printf("name: %s\n", name);
 
